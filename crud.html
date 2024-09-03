@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="index">
+    <nav>
+        <div class="logo">Contacts</div>
+        <ul class="links">
+            <li><a href="crud.html">Add Contact</a></li>
+            <li><a href="home.html">Home</a></li>
+        </ul>
+    </nav>
+    <div class="form-container">
+        <input type="hidden" id="id" name="id">
+        <input class="text" id="name" placeholder="Name">
+        <input class="text" id="address" placeholder="Address">
+        <input class="text" id="phone" placeholder="Contact Number">
+        <button class="btn" onclick="addorUpdate()">Add</button>
+    </div>
+    <div class="thetable">
+        <table id="crudTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Contact Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Records will be loaded here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
